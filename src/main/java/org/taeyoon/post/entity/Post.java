@@ -25,4 +25,11 @@ public class Post extends BaseEntity {
     @Column(length = 100, nullable = false)
     private String author;
 
+    public void changeTitle(String title) {
+        this.title = title;
+    }
+    public void changeContent(String content) {
+        this.content = content;
+    }
+
 }
